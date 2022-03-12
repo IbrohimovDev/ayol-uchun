@@ -62,7 +62,10 @@ counters.forEach(counter=>{
   updateCount()
 })
 
-let select = document.querySelector('select')
+const select = document.querySelector('select')
+const allLang = ['uz','en','ru']
+select.addEventListener('change',changeURLLanguage)
+
 
 function changeURLLanguage(){
   let lang = select.value
@@ -73,12 +76,13 @@ function changeURLLanguage(){
 function changeLanguage(){
   let hash = window.location.hash
   hash = hash.substr(1)
+  console.log(hash)
   if(!allLang.includes(hash)){
     location.href = window.location.pathname + '#en'
     location.reload()
   }
   select.value = hash
-  document.querySelector('title').innerHTML = langArr['unit'][hash]
+  // document.querySelector('title').innerHTML = langArr['unit'][hash]
   for(let key in langArr){
     let elem = document.querySelector('.lng-' + key)
     if(elem){

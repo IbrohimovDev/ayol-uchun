@@ -76,7 +76,7 @@ const langArr = {
     },
     "coursesTitleDaily" :{
         "uz" : "Kunlik taom tayyorlash bo‘yicha boshlang‘ich kurs",
-        "en" : "Daily cooking course",
+        "en" : "Basic course about making daily foods",
         "ru" : "Ежедневный кулинарный курс",
     },
     "btnWatch" : {
@@ -185,7 +185,52 @@ const langArr = {
         "ru" : "Скачайте приложение и смотрите видеокурсы"
     },
     "appWatch" : {
-        "uz" : ""
+        "uz" : " smartfoningizda yuqori tezlikda tomosha qiling.",
+        "en" : "on your smartphone at high speed. ",
+        "ru" : "на своем смартфоне на высокой скорости."
+    },
+    "social" :{
+        "uz" : "Ijtimoiy",
+        "en" : "Social",
+        "ru" : "Социальное"
+    },
+    "networks" :{
+        "uz" : "tarmoqlarimiz",
+        "en" : "networks",
+        "ru" : "сети"
+    }, 
+    "interviews" : {
+        "uz" : "INTERVYULAR",
+        "en" : "INTERVIEWS",
+        "ru" : "ИНТЕРВЬЮ",
+    },
+    "interview" : {
+        "uz" : "AZIZAXON TOSHXO'JAYEVA",
+        "en" : "INTERVIEW WITH ",
+        "ru" : "ИНТЕРВЬЮ С ",
+    },
+    "sinterview" : {
+        "uz" :" INTERVYUSI",
+        "en" : "AZIZAKHON TASHKHOJAYEVA",
+        "ru" : "АЗИЗАХОН ТАШХОДЖАЕВОЙ"
+    },
+    "interDesc" : {
+        "uz" : "Azat Miftaxov ishi: Qanday qilib sudlanuvchiga Azat Miftaxov ishi: Qanday qilib sudlananuv...",
+        "en" : "Azat Miftakhov's case: As a defendant Azat Miftakhov's case: How sudlananuv ...",
+        "ru": "Дело Азата Мифтахова: Как подсудимому Дело Азата Мифтахова: Как судлананув ..."
+    },
+    "joinus" : {
+        "uz" : "BIZGA OBUNA BO'LING",
+        "en" : "FOLLOW US",
+        "ru" : "ПОДПИСЫВАЙТЕСЬ НА НАС"
+    },
+    "createdby" : {
+        "en" : "Created with ",
+        "ru" : "Создано с",
+    },
+    "bycompany" : {
+        "en" : "by company ",
+        "ru" : "от компании "
     }
 
 }

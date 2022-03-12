@@ -147,14 +147,13 @@
                     </li>
                 </ul>
                 <div class="nav_lang-switcher">
-                    <img src="./assets/img/flag.png" class="nav__flag" alt="">
-                    <span class="nav_selected_lang">O'zbekcha</span>
+                    <select class="nav__select">
+                        <option value="uz" class="nav__option nav__flag" >        <img src="./assets/img/flag.png"  >O'zbekcha</option>
+                        <option value="en" class="nav__option nav__flag" selected><img src="./assets/img/flag-eng.png"  >English</option>
+                        <option value="ru" class="nav__option nav__flag">         <img src="./assets/img/flag-russia.png"  >Pусский</option>
+                    </select>
                 </div>
-                <ul class="nav__list nav__list_lang_switcher">
-                    <li class="">Uz</li>
-                    <li class="">Ru</li>
-                    <li class="">En</li>
-                </ul>
+                
                 <div class="nav__btn-login">
                     <button class="btn">
                         <img src="./assets/img/icon-login.png" class="btn_login-icon" alt="">
@@ -472,8 +471,7 @@
                     <h1><span class="download-section_for_woman lng-forWoman">Ayol uchun</span> <span><img
                                 src="./assets/img/logo.png" alt=""></span><br class="lng-mobApp">mobil ilovasini yuklab oling
                     </h1>
-                    <p class="download-section__desc lng-donwApp">Ilovani yuklab oling va video kurslarni <br class="lng-appWatch"> smartfoningizda
-                        yuqori tezlikda tomosha<br class="lng-mobApp2"> qiling. </p>
+                    <p class="download-section__desc lng-donwApp">Ilovani yuklab oling va video kurslarni <br class="lng-appWatch"> smartfoningizda yuqori tezlikda tomosha qiling. </p>
                     <div class="download-section__app-stores">
                         <div class="download-section__stores">
                             <img src="./assets/img/google.png" alt="">
@@ -509,12 +507,12 @@
                     <div class="imgBox">
                         <img src="./assets/img/pyschologist.png" alt="">
                         <img class="interviews-section__btn_play" src="./assets/img/play.png" alt="">
-                        <h6 class="interviews-section__interview-title">AZIZAXON TOSHXO'JAYEVA <br class="lng-sinterview">INTERVYUSI</h6>
+                        <h6 class="interviews-section__interview-title lng-interviewAuthor">AZIZAXON TOSHXO'JAYEVA <br class="lng-sinterview">INTERVYUSI</h6>
                     </div>
                     <div class="interviews-section__content">
                         <div class="interview-section__details">
                             <img src="./assets/img/eye.png" alt=""><span>124</span><img src="./assets/img/dot.png"
-                                    alt=""><span class="lng-interDate">14-yanvar 14:28</span>
+                                    alt=""><span class="lng-date">14-yanvar 14:28</span>
                         </div>
                         <h5 class="interview-section__title lng-interDesc">Azat Miftaxov ishi: Qanday qilib sudlanuvchiga Azat Miftaxov ishi: Qanday qilib
                             sudlananuv...</h5>
@@ -638,10 +636,13 @@
                 <img src="./assets/img/foot-twit.png" alt="">
                 <img src="./assets/img/foot-tg.png" alt="">
             </div>
-            <p class="footer-section_creator lng-createdbt">Created with <img src="./assets/img/foot-heart.png" alt=""> by company <b class="footer-section_bold">UIC</b></p>
+            <div class="footer_createdby">
+                <p class="footer-section_creator lng-createdby">Created with  <img src="./assets/img/foot-heart.png" alt=""></p> <span class="bycompany lng-bycompany"></span> <b class="footer-section_bold"> UIC</b>
+            </div>
         </nav>
     </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./lang.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>

@@ -116,7 +116,8 @@
 .footer-section__nav,
 .footer-section .nav__list,
 .footer-section_site-name,
-.footer-section__nav_bottom{
+.footer-section__nav_bottom,
+.footer_createdby{
     display: flex;
     flex-direction: row;
     align-items:center;
@@ -153,6 +154,14 @@
     width:104px;
     height:56px;
     margin-right:48px;
+}
+.nav__select{
+    background:#ffffff33;
+}
+.nav__select,
+.nav__option{
+    border: none;
+    outline: none;
 }
 .nav_lang-switcher{
     display: flex;
@@ -276,7 +285,9 @@
 .hey-section__text,
 .interviews-section__interview-title,
 .footer_bold,
-.footer-section_creator{
+.footer-section_creator,
+.bycompany,
+.footer-section_bold{
     color:#fff;
 
 }
@@ -648,7 +659,8 @@
     right:0;
     z-index:1;
 }
-.footer-section_creator{
+.footer-section_creator,
+.bycompany{
     font-family: 'thin';
 }
 .footer-section_year{
@@ -680,5 +692,7 @@
 .footer-section_site-name{
     font-family: 'normal';
 }
-
+.footer_createdby{
+    justify-content: space-between;
+}
 

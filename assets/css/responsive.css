@@ -1,0 +1,127 @@
+@media (max-width:1280px){
+    .download-section__app-stores{
+        margin-top:400px;
+    }
+    .download-section__download{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+    .download-section__download .imgBox{
+        position:absolute;
+        bottom:100px;
+        left:5%;
+    }
+}
+@media(min-width:1024px){
+    .mobile-wrapper{
+        display: none;
+    }
+}
+@media (max-width:1024px){
+    .nav__element_right,
+    .nav__element_left .nav__list{
+        display: none;
+    }
+   
+    .main__countup{
+        padding-bottom:50px;
+    }
+    .countup_half{
+        flex-direction: column;
+        margin-top:20px;
+    }
+    .countup_half .countup_boxes{
+        margin-top:20px;
+    }
+    .hey-section__content{
+        flex-direction:column;
+        height:400px;
+    }
+    .hey-section__text{
+        width: 80%;
+        margin:auto;
+        text-align:center;
+    }
+    .hey-section__hey_woman,
+    .hey-section__bg-logo{
+        left:50%;
+        transform:translateX(-50%);
+    }
+    .hey-section .btn{
+        width:100%;
+        margin-bottom:20px;
+    }
+    .footer-section__nav,
+    .footer-section__nav_bottom{
+        flex-direction:column;
+        align-items: center;
+    }
+    .footer-section__nav_bottom{
+        padding:20px 0;
+    }
+    .footer-section__nav_bottom div{
+        margin-bottom:20px;
+    }
+    .footer-section .imgBox{
+        margin-top:20px;
+    }
+}
+
+@media(max-width:900px){
+    .download-section__container{
+        flex-direction: column;
+    }
+    .download-section__container .download-section__content,
+    .download-section__container .download-section__download{
+        width:100%;
+        margin-bottom:20px;
+    }
+    .download-section__download .imgBox,
+    .download-section__content{
+        width:50%;
+    }
+    .download-section__download .imgBox{
+        position: relative;
+        bottom:-45px;
+    }
+    .download-section__app-stores{
+        margin-top:0;
+    }
+}
+@media(min-width:800px){
+    .download-section__content_before{
+        display: none;
+    }
+}
+@media(max-width:800px){
+    .download-section__download .imgBox{
+        display:none;
+    }
+    .download-section__content{
+        position: relative;
+        z-index: 2;
+    }
+    .download-section__download{
+        overflow:hidden;
+    }
+    .download-section__content_before{
+        display:block;
+        position: absolute;
+        height:200%;
+        width:auto;
+        margin-top:200px;
+        background-position: center top;
+        background-repeat: no-repeat;
+        opacity: .3;
+        /* z-index: -1; */
+    }
+}
+@media(max-width:650px){
+    .footer-section__nav .nav__list{
+        flex-direction: column;
+    }
+    .footer-section__nav .nav__item{
+        margin-top:20px;
+    }
+}

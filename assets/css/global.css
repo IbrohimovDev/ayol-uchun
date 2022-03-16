@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'bold';
+    src: url('../fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'thin';
+    src: url('../fonts/Open_Sans/static/OpenSans/OpenSans-Light.ttf');
+}
+@font-face {
+    font-family: 'normal';
+    src: url('../fonts/Open_Sans/static/OpenSans/OpenSans-Medium.ttf');
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:'bold';
+    transition:.5s;
+}
+::-webkit-scrollbar{
+    background-color:#FAFBFC;
+    width:10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius:10px;
+    background-color:#F5365C;
+}
+.hover{
+    position: relative;
+    
+}
+.hover::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.01rem;
+    left:0;
+    background:white;
+    bottom:-10px;
+}
+
+.hover-left::after{
+    transform: scale(0,1);
+    transform-origin: 0% 100%;
+    transition: transform ease .4s;
+
+}
+.hover-left:hover::after{
+    transform:scale(1,1);
+}

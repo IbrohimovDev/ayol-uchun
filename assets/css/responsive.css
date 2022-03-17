@@ -237,7 +237,9 @@
 }
 
 @media(max-width:650px) {
-
+    .header__range-container{
+        top:600px;
+    }
     .footer-section__nav .nav__list {
         flex-direction: column;
     }
@@ -257,7 +259,9 @@
         display: flex;
         flex-direction: column;
     }
-
+    .header__range-container{
+        top:650px;
+    }
     .countup_boxes {
         width: 100%;
     }
@@ -293,5 +297,8 @@
     .blogs-section__cards, 
     .courses-section__courses {
         padding:0;
+    }
+    .header__range-container{
+        top:690px;
     }
 }

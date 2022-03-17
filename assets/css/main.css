@@ -616,7 +616,9 @@
     font-family: 'thin';
     line-height: 36.4px;
 }
-
+.download-section__download{
+    position: relative;
+}
 .hey-section__content .btn,
 .download-section_for_woman {
     color: #F5365C;

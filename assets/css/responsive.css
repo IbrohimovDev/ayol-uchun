@@ -6,22 +6,34 @@
 
 @media (max-width:1280px) {
     .download-section__app-stores {
-        margin-top: 400px;
+        position: absolute;
+        transform: rotate(90deg);
+        top:300px;
+        left:250px;
     }
-
     .download-section__download {
         position: relative;
-        display: flex;
-        flex-direction: row;
+        min-height:550px;
+
+    }
+    .download-section__content{
+        position:absolute;
+        top:5%;
     }
 
     .download-section__download .imgBox {
         position: absolute;
         bottom: 100px;
         left: 5%;
+        bottom: 0;
     }
 }
-
+@media (max-width:900px) {
+    .download-section__app-stores {
+        
+        left:370px;
+    }
+}
 @media(min-width:1024px) {
     .mobile-wrapper {
         display: none;
@@ -153,7 +165,13 @@
         grid-row-gap: 5px;
         justify-content: center;
     }
-
+    .interviews-section__title_main,
+    .blogs-section__title_main,
+    .categories-section__title_main,
+    .courses-section__title_main{
+        text-align:center;
+        margin-bottom:20px;
+    }
     .download-section__container .download-section__content,
     .download-section__container .download-section__download {
         width: 100%;
@@ -193,6 +211,13 @@
 
     .download-section__download {
         overflow: hidden;
+        min-height: auto;
+    }
+    .download-section__app-stores {
+        transform: none;
+        position: relative;
+        top:auto;
+        left:auto;
     }
 
     .download-section__content_before {
@@ -244,6 +269,23 @@
 
     .download-section__stores:nth-child(1) {
         margin-bottom: 20px;
+    }
+}
+
+@media(min-width:700px){
+    .mobile-wrapper__mobile-menu{
+        width:30%;
+    }
+    .mobile-wrapper__mobile-burger.active{
+        left:25%;
+    }
+}
+@media(min-width:500px){
+    .mobile-wrapper__mobile-menu{
+        width:50%;
+    }
+    .mobile-wrapper__mobile-burger.active{
+        left:40%;
     }
 }
 @media(max-width:370px){

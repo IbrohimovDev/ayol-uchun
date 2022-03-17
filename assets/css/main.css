@@ -19,19 +19,35 @@
 .header__range-container {
     position: absolute;
     width: 144px;
-    top: 330px;
-    left: 10%;
+    top: 350px;
+    left: 15%;
 }
 
 .header__slider {
     position: relative;
     height: 2px;
-    width: 100%;
+    width:100%;
     /* opacity:0.2; */
     background: rgb(245, 54, 92, .2);
     border-radius: 10px;
+    z-index:99;
 }
 
+.header .swiper-slide{
+    width:100%;
+    margin:auto;
+    cursor:grab;
+    transition: all .5s ease-in-out;
+}
+.header .swiper-wrapper{
+    width:100%;
+    /* padding:0 10%; */
+    margin:auto;
+}
+.header .swiper-slide{
+    width:100%;
+    padding:0 15%;
+}
 .header__input {
     position: absolute;
     width: 100%;
@@ -95,6 +111,7 @@
 .main__container,
 .main__container_s,
 .main__countup,
+.mobile-btns,
 .countup__counter-title,
 .main__slider-container,
 .countup_boxes,
@@ -265,8 +282,8 @@
 .nav_social-list img {
     transition: .3s;
     filter: grayscale(300%);
-    width:16px;
-    height:16px;
+    width:24px;
+    height:24px;
 }
 .nav_social-list img:hover {
     filter: grayscale(0);
@@ -289,10 +306,8 @@
 
 .main__container_s {
     justify-content: space-between;
-    width: 80%;
-    max-width: 1436px;
+    width: 100%;
     margin: auto;
-    overflow: hidden;
 }
 
 .main__slider-container {
@@ -300,10 +315,12 @@
     width: 100%;
     min-width: 100%;
     justify-content: space-between;
-    /* margin:auto; */
     transition: all .5s ease-in-out;
 }
-
+.main__content-container .imgBox{
+    width:58px;
+    height:58px;
+}
 .main__title {
     margin-top: 20px;
     font-size: 28px;
@@ -344,6 +361,7 @@
 
 .main__countup,
 .header__main,
+.nav__element_left,
 .countup_half,
 .courses-section,
 .categories-section,
@@ -389,7 +407,7 @@
 .blogs-section__card .imgBox .blogs-section__date,
 .interviews-section__btn_play,
 .interviews-section__interview-title,
-.swiper-slide img::before {
+.footer-section .swiper-slide img::before {
     position: absolute;
 }
 
@@ -583,6 +601,7 @@
 
 .hey-section__bg-logo {
     left: 50px;
+    max-width:100%;
     position: relative;
     z-index: 1;
 }
@@ -748,7 +767,6 @@
 }
 .interviews-section .imgBox{
     position: relative;
-    height: 70%;
     overflow:hidden;
 }
 .interviews-section__card{
@@ -825,14 +843,14 @@
     line-height: 44px;
 }
 
-.swiper {
+.footer-section .swiper {
     position: relative;
     padding-top: 200px;
     background: linear-gradient(180deg, rgba(248, 251, 252, 0) 50%, #F8FBFC 100%);
     cursor: grab;
 }
 
-.swiper-slide {
+.footer-section .swiper-slide {
     position: relative;
     text-align: center;
     font-size: 18px;
@@ -846,7 +864,7 @@
 
 }
 
-.swiper-slide img {
+.footer-section .swiper-slide img {
     display: block;
     position: relative;
     width: 100%;
@@ -855,7 +873,7 @@
     background-position: center top;
 }
 
-.swiper-slide img:active {
+.footer-section .swiper-slide img:active {
     cursor: grabbing;
 }
 
@@ -874,7 +892,7 @@
     cursor: grabbing;
 }
 
-.swiper-slide:hover .overlay {
+.footer-section .swiper-slide:hover .overlay {
     background: linear-gradient(180deg, rgb(245, 54, 92, .5), #fff);
 
 }
@@ -919,7 +937,9 @@
 .bycompany {
     font-family: 'thin';
 }
-
+.bycompany{
+    margin-right:5px;
+}
 .footer-section_year {
     font-family: 'thin';
 }
@@ -934,7 +954,7 @@
 }
 
 .footer-section .nav__list {
-    height: 128px;
+    min-height: 128px;
 }
 
 .footer-section .nav__item a {
@@ -945,6 +965,13 @@
 
 .footer-section__imgBox img {
     margin-right: 10px;
+    width:28px;
+    height:28px;
+    filter:grayscale(100%);
+}
+.footer-section__imgBox img:hover{
+    filter:grayscale(0);
+
 }
 
 .footer-section__nav_bottom {
@@ -974,4 +1001,12 @@
     color: #fff;
     font-family:'thin';
     margin-right:10px;
+}
+.footer-section .nav__list,
+.footer-section .imgBox{
+    position: relative;
+    z-index:2;
+}
+.hey-section__bg-logo{
+    z-index: 1;
 }

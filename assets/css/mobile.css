@@ -52,14 +52,30 @@
     margin: 50px;
     flex-direction: column;
 }
+.mobile__nav .nav__logo{
+    position: relative;
+    left:0;
+    top:-35px; 
+}
 .mobile__nav ul,
 .nav_lang-switcher,
 .nav__logo{
     margin-bottom:20px;
+}
+.mobile__nav .nav__item{
+    list-style: none;
+    color:#fff;
+}
+.mobile__nav .nav__link{
+    text-decoration:none;
+    color:#fff;
 }
 .nav_lang-switcher{
     background:#fff;
 }
 .select-items{
     background:#fff;
+}
+.mobile__nav .nav_social-list img{
+    filter:none;    
 }

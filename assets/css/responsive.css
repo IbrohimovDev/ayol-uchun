@@ -1,3 +1,8 @@
+@media(min-width:1536px){
+    .main__container_s{
+        padding:0 15%;
+    }
+}
 @media (max-width:1280px){
     .download-section__app-stores{
         margin-top:400px;
@@ -19,15 +24,52 @@
     }
 }
 @media (max-width:1024px){
+    .main__slider-container{
+        display:flex;
+        flex-direction:column-reverse;
+    }
+    .main__content-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .header__range-container{
+        top:570px;
+        left:50%;
+        transform:translateX(-50%);
+        z-index: 99;
+    }
+    .main__content-container .imgBox{
+        margin-top:25px;
+        margin-right:25px;
+    }
     .nav__element_right,
     .nav__element_left .nav__list{
         display: none;
     }
-   
+   .header__nav{
+       position: fixed;
+       top:0;
+       left:0;
+       z-index: 999;
+       background:#fff;
+       width:100%;
+       margin:auto;
+   }
+   .nav__logo{
+      
+       display: flex;
+       justify-content:center;
+       align-items:center;
+   }
+   .header__main{
+       margin-top:88px;
+   }
+   .nav__logo{
+       margin:auto;
+       width:100%;
+   }
     .main__countup{
         padding-bottom:50px;
-    }
-    .countup_half{
         flex-direction: column;
         margin-top:20px;
     }
@@ -36,7 +78,7 @@
     }
     .hey-section__content{
         flex-direction:column;
-        height:400px;
+        min-height:400px;
     }
     .hey-section__text{
         width: 80%;
@@ -118,10 +160,31 @@
     }
 }
 @media(max-width:650px){
+    
     .footer-section__nav .nav__list{
         flex-direction: column;
     }
     .footer-section__nav .nav__item{
         margin-top:20px;
+    }
+    .download-section__stores{
+        display:flex;
+        flex-direction: row;
+    }
+}
+@media(max-width:500px){
+    .countup_half{
+        display:flex;
+        flex-direction: column;
+    }
+    .countup_boxes{
+        width:100%;
+    }
+    .download-section__app-stores{
+        display: flex;
+        flex-direction:column;
+    }
+    .download-section__stores:nth-child(1){
+        margin-bottom:20px;
     }
 }

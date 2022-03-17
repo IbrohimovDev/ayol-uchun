@@ -4,27 +4,16 @@ burger.onclick =()=>{
   burger.classList.toggle('active')
   menu.classList.toggle('active')
 }
-// function show() {
-//   menu.style.right = '0'
-//   menu.style.position = 'fixed'
-//   console.log('show')
-// }
-// function close() {
-//   menu.style.position = 'absolute'
-//   menu.style.right = '-100%'
-//   console.log('close')
-// }
+var mainSwiper = new Swiper(".mainSwiper", {
+  slidesPerView: "auto",
+  centeredSlides: true,
+  loop: true,
+});
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+   
   });
 
 let date = new Date()
@@ -87,37 +76,37 @@ counters.forEach(counter=>{
 // window.addEventListener('resize', changeImgboxSize)  
 
 
-const select = document.querySelector('select')
-const allLang = ['uz','en','ru']
-select.addEventListener('change',changeURLLanguage)
+// const select = document.querySelector('.select-items div')
+// const allLang = ['uz','en','ru']
+// select.addEventListener('change',changeURLLanguage)
 
 
-function changeURLLanguage(){
-  let lang = select.value
-  location.href = window.location.pathname + '#' + lang
-  location.reload()
-}
+// function changeURLLanguage(){
+//   let lang = select.value
+//   location.href = window.location.pathname + '#' + lang
+//   location.reload()
+// }
 
-function changeLanguage(){
-  let hash = window.location.hash
-  hash = hash.substr(1)
-  console.log(hash)
-  if(!allLang.includes(hash)){
-    location.href = window.location.pathname + '#en'
-    location.reload()
-  }
-  select.value = hash
-  // document.querySelector('title').innerHTML = langArr['unit'][hash]
-  for(let key in langArr){
-    let elem = document.querySelector('.lng-' + key)
-    if(elem){
-      elem.innerHTML = langArr[key][hash]
-    }
-  }
+// function changeLanguage(){
+//   let hash = window.location.hash
+//   hash = hash.substr(1)
+//   console.log(hash)
+//   if(!allLang.includes(hash)){
+//     location.href = window.location.pathname + '#en'
+//     location.reload()
+//   }
+//   select.value = hash
+//   // document.querySelector('title').innerHTML = langArr['unit'][hash]
+//   for(let key in langArr){
+//     let elem = document.querySelector('.lng-' + key)
+//     if(elem){
+//       elem.innerHTML = langArr[key][hash]
+//     }
+//   }
 
-}
+// }
 
-changeLanguage()
+// changeLanguage()
 
 
 // Custom select and option

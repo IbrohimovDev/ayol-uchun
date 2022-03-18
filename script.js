@@ -1,6 +1,6 @@
 let burger = document.querySelector('.mobile-wrapper__mobile-burger')
 let menu = document.querySelector('.mobile-wrapper__mobile-menu')
-burger.onclick =()=>{
+burger.onclick = () => {
   burger.classList.toggle('active')
   menu.classList.toggle('active')
 }
@@ -11,12 +11,13 @@ var mainSwiper = new Swiper(".mainSwiper", {
 });
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    loop: true,
-   
-  });
+  slidesPerView: 5.8,
+  loop: true,
+  spaceBetween: 0,
+  centeredSlides: true,
+});
 
-let date = new Date()
+const date = new Date()
 let currentYear = date.getFullYear()
 let year = document.querySelector('.footer-section_year')
 year.innerHTML = currentYear
@@ -27,18 +28,15 @@ let bar = document.querySelector('.progress-bar')
 let thumb = document.querySelector('.thumb')
 let container = document.querySelector('.main__slider-container')
 
-slider.oninput= ()=>{
+slider.oninput = () => {
   let value = slider.value
   thumb.style.left = value + '%'
   bar.style.width = value + '%'
-  console.log(value)
-  if(value < 30){
+  if (value < 30) {
     container.style.marginLeft = '0'
-  }
-  if(value >= 30 && value < 60){
+  } else if (value >= 30 && value < 60) {
     container.style.marginLeft = '-100%'
-  }
-  if(value >= 60 && value < 100){
+  } else {
     container.style.marginLeft = '-100%'
   }
 
@@ -47,15 +45,15 @@ slider.oninput= ()=>{
 const counters = document.querySelectorAll('.countup__content h3')
 const speed = 5000
 
-counters.forEach(counter=>{
-  const updateCount = () =>{
+counters.forEach(counter => {
+  const updateCount = () => {
     const target = +counter.getAttribute('data-target')
-    const count  = +counter.innerText
+    const count = +counter.innerText
 
     const inc = target / speed
-    
-    if (count < target){
-      counter.innerText= Math.ceil(count + inc)
+
+    if (count < target) {
+      counter.innerText = Math.ceil(count + inc)
       setTimeout(updateCount, 1)
     } else {
       count.innerText = Math.ceil(target)
@@ -67,7 +65,7 @@ counters.forEach(counter=>{
 // function changeImgboxSize(){
 //   let imgBox = document.querySelector('.interviews-section__imgBox')
 //   let img = document.querySelector('.interviews-section__main-img')
-  
+
 //   let imgHeight = img.height
 //   console.log(imgHeight)
 //   imgBox.style.height = imgHeight + "" + "!important"
@@ -131,32 +129,32 @@ for (i = 0; i < l; i++) {
     create a new DIV that will act as an option item: */
     c = document.createElement("DIV");
     c.innerHTML = selElmnt.options[j].innerHTML;
-    c.addEventListener("click", function(e) {
-        /* When an item is clicked, update the original select box,
-        and the selected item: */
-        var y, i, k, s, h, sl, yl;
-        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-        sl = s.length;
-        h = this.parentNode.previousSibling;
-        for (i = 0; i < sl; i++) {
-          if (s.options[i].innerHTML == this.innerHTML) {
-            s.selectedIndex = i;
-            h.innerHTML = this.innerHTML;
-            y = this.parentNode.getElementsByClassName("same-as-selected");
-            yl = y.length;
-            for (k = 0; k < yl; k++) {
-              y[k].removeAttribute("class");
-            }
-            this.setAttribute("class", "same-as-selected");
-            break;
+    c.addEventListener("click", function (e) {
+      /* When an item is clicked, update the original select box,
+      and the selected item: */
+      var y, i, k, s, h, sl, yl;
+      s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+      sl = s.length;
+      h = this.parentNode.previousSibling;
+      for (i = 0; i < sl; i++) {
+        if (s.options[i].innerHTML == this.innerHTML) {
+          s.selectedIndex = i;
+          h.innerHTML = this.innerHTML;
+          y = this.parentNode.getElementsByClassName("same-as-selected");
+          yl = y.length;
+          for (k = 0; k < yl; k++) {
+            y[k].removeAttribute("class");
           }
+          this.setAttribute("class", "same-as-selected");
+          break;
         }
-        h.click();
+      }
+      h.click();
     });
     b.appendChild(c);
   }
   x[i].appendChild(b);
-  a.addEventListener("click", function(e) {
+  a.addEventListener("click", function (e) {
     /* When the select box is clicked, close any other select boxes,
     and open/close the current select box: */
     e.stopPropagation();

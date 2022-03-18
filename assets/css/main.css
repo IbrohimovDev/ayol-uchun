@@ -863,7 +863,12 @@
     width: 33% !important;
     height: 280px !important;
     overflow: hidden;
+}
 
+.mySwiper .swiper-slide > img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
 }
 
 .footer-section .swiper-slide img {
@@ -895,7 +900,7 @@
 }
 
 .footer-section .swiper-slide:hover .overlay {
-    background: linear-gradient(180deg, rgb(245, 54, 92, .5), #fff);
+    background: rgba(245, 54, 92, 0.4);
 
 }
 
